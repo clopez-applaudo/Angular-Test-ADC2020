@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
   template: "mock",
 })
 export class MockLightSwitchComponent {}
+
 describe("AppComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
