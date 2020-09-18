@@ -1,10 +1,17 @@
+import { Component } from "@angular/core";
 import { TestBed, async } from "@angular/core/testing";
 import { AppComponent } from "./app.component";
+
+@Component({
+  selector: "app-users",
+  template: "mock",
+})
+export class MockUsersComponent {}
 
 describe("AppComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      declarations: [AppComponent, MockUsersComponent],
     }).compileComponents();
   }));
 
