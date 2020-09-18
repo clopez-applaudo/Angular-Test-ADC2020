@@ -1,0 +1,9 @@
+<h3>Users</h3>
+
+<ul *ngIf="users$">
+  <li *ngFor="let user of users$ | async">
+    {{ user.name }} ({{ user.email }})
+  </li>
+</ul>
+
+<button id="load" (click)="load()">Load</button>
